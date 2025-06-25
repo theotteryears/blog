@@ -16,7 +16,7 @@
 
   <div id="posts" class="space-y-4">
     <% @posts.each do |post| %>
-      <div class="bg-white p-4 border rounded">
+      <div class="bg-white p-4 border rounded shadow hover:shadow-lg transition">
         <%= render post %>
         <div class="text-sm text-gray-600">
           <strong>Created at:</strong> <%= post.created_at.strftime("%B %d, %Y") %><br>
